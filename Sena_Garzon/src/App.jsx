@@ -31,6 +31,9 @@ function App() {
       <p className="read-the-docs">
         Saludos,este es mi primer cambio
       </p>
+      <p className="read-the-docs">
+        Saludos,este es el segundo cambio
+      </p>
     </>
   )
 }
