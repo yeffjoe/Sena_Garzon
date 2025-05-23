@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* === Colores personalizados del SENA === */
+:root {
+  --sena-green: #39A900;
+  --sena-dark-green: #2E7D32;
+  --sena-light-green: #E8F5E9;
+}
+
+/* === Utilidades Personalizadas === */
+
+/* Fondo verde SENA */
+.bg-sena-green {
+  background-color: var(--sena-green);
+}
+
+/* Botón estilo SENA */
+.btn-sena-green {
+  @apply text-white border-none;
+  background-color: var(--sena-green);
+}
+
+.btn-sena-green:hover {
+  background-color: var(--sena-dark-green);
+  color: white;
+}
+
+/* Encabezado de certificado */
+.certificate-header {
+  background: linear-gradient(135deg, var(--sena-green), var(--sena-dark-green));
+  color: white;
+}
+
+/* Caja de información con fondo verde claro */
+.info-box.bg-light-green {
+  background-color: var(--sena-light-green);
+  border-left: 4px solid var(--sena-green);
+  padding: 1rem; /* opcional */
+  border-radius: 0.5rem; /* opcional */
+}
